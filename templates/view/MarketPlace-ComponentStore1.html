@@ -1,0 +1,43 @@
+<div id='<?$_name?>'>
+	<div class='row container'>
+	<?$Content?>
+	<?rows?>
+		<?row?>
+			<div style='width:300px; float:left; margin:10px;'>
+				<div class="panel panel-<?panel_type?>info<?/panel_type?>">
+	              <div class="panel-heading">
+	                <div class="row">
+	                  <div class="col-xs-3">
+	                    <i class="fa fa-<?icon?>comments<?/icon?> fa-5x"></i>
+	                  </div>
+	                  <div class="col-xs-9 text-right">
+	                    <p class="announcement-heading"><?$type?></p>
+	                    <p class="announcement-text"><?$name?></p>
+	                  </div>
+	                </div>
+	              </div>
+	                <div class="panel-footer announcement-bottom">
+	                  <div class="row">
+		              <a href="#" onclick="<?$info_btn?>">
+	                    <div class="col-xs-6">
+	                      More info
+	                    </div>
+		              </a>
+		              <?download_components?>
+			              <a href="epan-components/<?$namespace?>/<?$namespace?>.zip">
+		                    <div class="col-xs-6 text-right">
+		                      Download <i class="glyphicon glyphicon-download"></i>
+		                    </div>
+			              </a>
+		              <?/download_components?>
+	                  </div>
+	                </div>
+	            </div>
+			</div>
+		<?/row?>
+	<?/rows?>
+	</div>
+	<div class='row container'>
+		<?$paginator?>
+	</div>
+</div>
