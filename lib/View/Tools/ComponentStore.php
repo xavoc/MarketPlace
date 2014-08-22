@@ -7,7 +7,7 @@ class View_Tools_ComponentStore extends \componentBase\View_Component{
 		parent::init();
 		
 		//TODO keep the line below in single CMS
-		 $this->add('Controller_EpanCMSApp')->ownerComponentRepository();
+		// $this->add('Controller_EpanCMSApp')->ownerComponentRepository();
 
 		
 		$market_place = $this->add('Model_MarketPlace');
