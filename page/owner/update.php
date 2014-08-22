@@ -12,6 +12,8 @@ class page_MarketPlace_page_owner_update extends page_componentBase_page_update 
 		
 		$this->update($dynamic_model_update=true); // All modls will be dynamic executed in here
 		
+		$this->js(true)->univ()->successMessage('Component Updated');
+		
 		// Code to run after update
 	}
 }
